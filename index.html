@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="center">
+    <section class="container column">
+        <div class="input center">
+            <input class="display" id="input" type="text" value="0" readonly>
+        </div>
+        <div id="row1" class="row modification center">
+            <div onclick="empty()">AC</div>
+            <i onclick="backspace()" class="material-icons">backspace</i>
+            <div onclick="display(this.id)" id="num1">%</div>
+            <div onclick="display(this.id)" id="num2">/</div>
+        </div>
+        <div  id="row2" class="row modification center">
+            <div onclick="display(this.id)" id="num3">7</div>
+            <div onclick="display(this.id)" id="num4">8</div>
+            <div onclick="display(this.id)" id="num5">9</div>
+            <div onclick="display(this.id)" id="num6">*</div>
+        </div>
+        <div  id="row3" class="row modification center">
+            <div onclick="display(this.id)" id="num7">4</div>
+            <div onclick="display(this.id)" id="num8">5</div>
+            <div onclick="display(this.id)" id="num9">6</div>
+            <div onclick="display(this.id)" id="num10">-</div>
+        </div>
+        <div id="row4" class="row modification center">
+            <div onclick="display(this.id)" id="num11">1</div>
+            <div onclick="display(this.id)" id="num12">2</div>
+            <div onclick="display(this.id)" id="num13">3</div>
+            <div onclick="display(this.id)" id="num14">+</div>
+        </div>
+        <div id="row5" class="row modification center">
+            <div onclick="display(this.id)" id="num15">0</div>
+            <div onclick="display(this.id)" id="num16">.</div>
+            <div onclick="result()" id="result">=</div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
